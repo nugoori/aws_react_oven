@@ -1,15 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 /** @jsxImportSource @emotion/react */
 import * as S from './Style.js';
-import HeaderLayout from '../HeaderLayout/HeaderLayout';
-import MainContainer from '../MainContainer/MainContainer';
 
-function MainLayout() {
+function MainLayout({ children }) {
     
     return (
         <div css={S.SLayout}>
-            <HeaderLayout />
-            <MainContainer />
+            {children}
         </div>
         
     );
